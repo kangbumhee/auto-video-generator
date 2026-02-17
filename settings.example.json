@@ -1,0 +1,9 @@
+{
+  "elevenLabsKey": "여기에_ElevenLabs_API_키_입력",
+  "geminiKey": "여기에_Google_Gemini_API_키_입력",
+  "selectedVoiceId": "GBv7mTt0atIp3Br8iCZE",
+  "selectedVoiceName": "Adam",
+  "defaultDuration": 10,
+  "defaultTone": "youtuber",
+  "defaultCategory": "economy"
+}

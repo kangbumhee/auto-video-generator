@@ -1,0 +1,569 @@
+{
+  "title": "지금 한국 주식, 들어가도 괜찮을까? 📈 전문가가 알려주는 투자 전략!",
+  "description": "최근 한국 주식 시장의 변동성이 심하죠? 지금 들어가도 괜찮을지, 아니면 기다려야 할지 고민이신 분들을 위해 전문가의 시각으로 꼼꼼하게 분석해 드립니다. 투자 결정에 도움이 될 핵심 정보만 쏙쏙 뽑아 알려드릴게요!",
+  "tags": [
+    "주식투자",
+    "한국주식",
+    "주식시장",
+    "투자전략",
+    "경제전망",
+    "재테크",
+    "주식분석"
+  ],
+  "hashtags": [
+    "#주식투자",
+    "#한국주식",
+    "#주식시장분석",
+    "#투자전략",
+    "#경제전망",
+    "#재테크꿀팁"
+  ],
+  "topic": "한국 주식시장 지금들어가도되ㅏ요?",
+  "totalDurationFrames": 18000,
+  "sections": [
+    {
+      "id": "HOOK",
+      "label": "🔥 후킹",
+      "narrationText": "안녕하세요 여러분! 오늘은 대한민국 주식 시장, 지금 들어가도 괜찮을지, 아니면 조금 더 기다려야 할지, 여러분의 궁금증을 시원하게 해결해 드리려고 합니다. 최근 시장 변동성이 너무 커서 다들 불안하시죠? 하지만 걱정 마세요! 전문가의 시각으로 꼼꼼하게 분석해서 여러분의 투자 결정을 도와드릴게요. 오늘 영상 끝까지 보시면 후회하지 않으실 겁니다!",
+      "subScenes": [
+        {
+          "id": "HOOK-1",
+          "type": "breaking-banner",
+          "durationFrames": 800,
+          "headline": "긴급 진단!",
+          "body": "지금 주식, 사야 할까? 팔아야 할까?",
+          "caption": "혼란스러운 투자자들을 위한 긴급 분석!",
+          "bgColor": "#0a0a1a",
+          "accentColor": "#ff0033",
+          "textColor": "#ffffff",
+          "sfx": "alarm"
+        },
+        {
+          "id": "HOOK-2",
+          "type": "stat-counter",
+          "durationFrames": 700,
+          "headline": "최근 주식 시장 변동성",
+          "numbers": [
+            {
+              "label": "코스피 변동률",
+              "value": 12,
+              "unit": "%",
+              "color": "#ff0033"
+            }
+          ],
+          "caption": "심상치 않은 변동 폭!",
+          "bgColor": "#0d1117",
+          "accentColor": "#ffd600",
+          "textColor": "#ffffff",
+          "sfx": "impact",
+          "body": "심상치 않은 변동 폭!"
+        },
+        {
+          "id": "HOOK-3",
+          "type": "fullscreen-text",
+          "durationFrames": 500,
+          "headline": "오늘의 주제",
+          "body": "한국 주식 시장, 지금 들어가도 될까요?",
+          "caption": "명쾌한 해답을 찾아드립니다!",
+          "bgColor": "#1a0a2e",
+          "accentColor": "#ffd600",
+          "textColor": "#ffffff",
+          "sfx": "whoosh"
+        }
+      ],
+      "audioFile": "voiceover/HOOK.mp3"
+    },
+    {
+      "id": "PROBLEM",
+      "label": "🤔 문제 제기",
+      "narrationText": "많은 분들이 지금 주식 시장에 뛰어들어야 할지 고민하고 계실 겁니다. 금리 인상, 인플레이션, 글로벌 경기 침체 우려 등 불안 요소가 너무 많죠. 잘못된 판단으로 소중한 자산을 잃을까 봐 걱정하시는 분들이 많을 텐데요. 실제로 주변 지인들 중에서도 주식 투자로 큰 손해를 본 사례를 심심찮게 접할 수 있습니다. 그래서 더욱 신중해야 하는 시기입니다.",
+      "subScenes": [
+        {
+          "id": "PROBLEM-1",
+          "type": "keyword-explosion",
+          "durationFrames": 600,
+          "headline": "투자자들의 고민",
+          "keywords": [
+            "금리인상",
+            "인플레이션",
+            "경기침체",
+            "변동성",
+            "손실"
+          ],
+          "caption": "불안 요소 가득한 시장!",
+          "bgColor": "#16213e",
+          "accentColor": "#E74C3C",
+          "textColor": "#ffffff",
+          "sfx": "pop",
+          "body": "불안 요소 가득한 시장!"
+        },
+        {
+          "id": "PROBLEM-2",
+          "type": "emoji-rain",
+          "durationFrames": 700,
+          "headline": "걱정 가득한 투자자들",
+          "keywords": [
+            "😥",
+            "😨",
+            "😱",
+            "🤯",
+            "💸"
+          ],
+          "caption": "마음고생 심한 투자자들!",
+          "bgColor": "#0f3460",
+          "accentColor": "#ff6b35",
+          "textColor": "#ffffff",
+          "sfx": "swoosh",
+          "body": "마음고생 심한 투자자들!"
+        },
+        {
+          "id": "PROBLEM-3",
+          "type": "fullscreen-text",
+          "durationFrames": 700,
+          "headline": "가장 큰 고민",
+          "body": "지금 들어가면... 손실 볼까봐 😥",
+          "caption": "손실에 대한 두려움!",
+          "bgColor": "#533483",
+          "accentColor": "#E74C3C",
+          "textColor": "#ffffff",
+          "sfx": "reveal"
+        }
+      ],
+      "audioFile": "voiceover/PROBLEM.mp3"
+    },
+    {
+      "id": "BACKGROUND",
+      "label": "🌍 배경 설명",
+      "narrationText": "최근 한국 주식 시장은 글로벌 경제 상황과 밀접하게 연동되어 움직이고 있습니다. 미국의 금리 인상 정책, 러시아-우크라이나 전쟁 장기화, 중국 경제 성장 둔화 등 다양한 요인들이 복합적으로 작용하면서 변동성이 커지고 있죠. 특히, 외국인 투자자들의 자금 이탈은 한국 주식 시장에 큰 부담으로 작용하고 있습니다. 과거 IMF 외환 위기나 글로벌 금융 위기 때와 유사한 불안감이 감돌고 있는 것도 사실입니다.",
+      "subScenes": [
+        {
+          "id": "BACKGROUND-1",
+          "type": "chart-line",
+          "durationFrames": 700,
+          "headline": "코스피 지수 추이",
+          "chartData": {
+            "type": "line",
+            "title": "최근 1년 코스피 지수 변동",
+            "data": [
+              {
+                "label": "2023-07",
+                "value": 2600,
+                "color": "#4ECDC4"
+              },
+              {
+                "label": "2023-10",
+                "value": 2400,
+                "color": "#4ECDC4"
+              },
+              {
+                "label": "2024-01",
+                "value": 2650,
+                "color": "#4ECDC4"
+              },
+              {
+                "label": "2024-04",
+                "value": 2700,
+                "color": "#4ECDC4"
+              }
+            ],
+            "unit": "포인트"
+          },
+          "caption": "불안정한 흐름을 보이는 코스피!",
+          "bgColor": "#0a0a1a",
+          "accentColor": "#4ECDC4",
+          "textColor": "#ffffff",
+          "sfx": "typing",
+          "body": "불안정한 흐름을 보이는 코스피!"
+        },
+        {
+          "id": "BACKGROUND-2",
+          "type": "comparison-split",
+          "durationFrames": 600,
+          "headline": "금리 인상 영향",
+          "comparisonLeft": {
+            "label": "금리 인상 전",
+            "value": "낮은 투자 매력도"
+          },
+          "comparisonRight": {
+            "label": "금리 인상 후",
+            "value": "높은 투자 매력도"
+          },
+          "caption": "금리 인상이 주식 시장에 미치는 영향!",
+          "bgColor": "#0d1117",
+          "accentColor": "#6c5ce7",
+          "textColor": "#ffffff",
+          "sfx": "ding",
+          "body": "금리 인상이 주식 시장에 미치는 영향!"
+        },
+        {
+          "id": "BACKGROUND-3",
+          "type": "fullscreen-text",
+          "durationFrames": 700,
+          "headline": "글로벌 경제 상황",
+          "body": "미국 금리 인상, 우크라이나 전쟁, 중국 경제 둔화",
+          "caption": "복합적인 악재의 영향!",
+          "bgColor": "#1a1a2e",
+          "accentColor": "#4ECDC4",
+          "textColor": "#ffffff",
+          "sfx": "reveal"
+        }
+      ],
+      "audioFile": "voiceover/BACKGROUND.mp3"
+    },
+    {
+      "id": "ANALYSIS_1",
+      "label": "🔎 분석 1: 거시 경제 지표 분석",
+      "narrationText": "먼저 거시 경제 지표를 살펴보겠습니다. 현재 한국 경제는 수출 부진, 소비 위축 등 어려움을 겪고 있지만, 정부의 적극적인 경기 부양책과 기업들의 투자 확대로 점차 회복될 가능성이 보입니다. 특히, 반도체 산업의 회복은 한국 경제에 긍정적인 신호로 작용할 수 있습니다. 하지만, 여전히 높은 수준의 가계 부채와 부동산 시장 불안정성은 잠재적인 위험 요인으로 남아있습니다.",
+      "subScenes": [
+        {
+          "id": "ANALYSIS_1-1",
+          "type": "stat-counter",
+          "durationFrames": 600,
+          "headline": "한국 경제 성장률 전망",
+          "numbers": [
+            {
+              "label": "2024년 예상 성장률",
+              "value": 2.5,
+              "unit": "%",
+              "color": "#00e676"
+            }
+          ],
+          "caption": "점진적인 회복세 전망!",
+          "bgColor": "#16213e",
+          "accentColor": "#00e676",
+          "textColor": "#ffffff",
+          "sfx": "typing",
+          "body": "점진적인 회복세 전망!"
+        },
+        {
+          "id": "ANALYSIS_1-2",
+          "type": "list-reveal",
+          "durationFrames": 700,
+          "headline": "주요 경제 지표",
+          "listItems": [
+            "수출 증가율 둔화",
+            "소비 심리 위축",
+            "가계 부채 증가"
+          ],
+          "caption": "주의해야 할 경제 지표들!",
+          "bgColor": "#0f3460",
+          "accentColor": "#ffd600",
+          "textColor": "#ffffff",
+          "sfx": "pop",
+          "body": "주의해야 할 경제 지표들!"
+        },
+        {
+          "id": "ANALYSIS_1-3",
+          "type": "fullscreen-text",
+          "durationFrames": 700,
+          "headline": "긍정적인 신호",
+          "body": "반도체 산업 회복 기대",
+          "caption": "경제 회복의 발판이 될까?",
+          "bgColor": "#533483",
+          "accentColor": "#00e676",
+          "textColor": "#ffffff",
+          "sfx": "reveal"
+        }
+      ],
+      "audioFile": "voiceover/ANALYSIS_1.mp3"
+    },
+    {
+      "id": "ANALYSIS_2",
+      "label": "🧐 분석 2: 기업 실적 및 밸류에이션 분석",
+      "narrationText": "기업들의 실적을 살펴보면, 업종별로 희비가 엇갈리고 있습니다. IT, 헬스케어 등 성장 산업은 꾸준한 실적을 유지하고 있지만, 전통적인 제조업은 어려움을 겪고 있는 상황입니다. 밸류에이션 측면에서는 한국 주식 시장이 선진국 시장에 비해 저평가되어 있다는 분석이 많습니다. 하지만, 저평가된 이유를 꼼꼼하게 살펴보고 투자해야 합니다. 무조건 싸다고 좋은 것은 아니니까요.",
+      "subScenes": [
+        {
+          "id": "ANALYSIS_2-1",
+          "type": "chart-bar",
+          "durationFrames": 700,
+          "headline": "업종별 실적 비교",
+          "chartData": {
+            "type": "bar",
+            "title": "2023년 업종별 영업이익 증감률",
+            "data": [
+              {
+                "label": "IT",
+                "value": 15,
+                "color": "#4ECDC4"
+              },
+              {
+                "label": "헬스케어",
+                "value": 10,
+                "color": "#4ECDC4"
+              },
+              {
+                "label": "제조업",
+                "value": -5,
+                "color": "#E74C3C"
+              }
+            ],
+            "unit": "%"
+          },
+          "caption": "업종별 실적 차이!",
+          "bgColor": "#0a0a1a",
+          "accentColor": "#4ECDC4",
+          "textColor": "#ffffff",
+          "sfx": "typing",
+          "body": "업종별 실적 차이!"
+        },
+        {
+          "id": "ANALYSIS_2-2",
+          "type": "comparison-split",
+          "durationFrames": 600,
+          "headline": "밸류에이션 비교",
+          "comparisonLeft": {
+            "label": "한국 주식 시장",
+            "value": "저평가"
+          },
+          "comparisonRight": {
+            "label": "선진국 주식 시장",
+            "value": "상대적 고평가"
+          },
+          "caption": "한국 주식 시장, 정말 저평가일까?",
+          "bgColor": "#0d1117",
+          "accentColor": "#6c5ce7",
+          "textColor": "#ffffff",
+          "sfx": "ding",
+          "body": "한국 주식 시장, 정말 저평가일까?"
+        },
+        {
+          "id": "ANALYSIS_2-3",
+          "type": "fullscreen-text",
+          "durationFrames": 700,
+          "headline": "주의 사항",
+          "body": "저평가 이유를 꼼꼼히 분석해야!",
+          "caption": "무조건 싸다고 좋은 건 아니다!",
+          "bgColor": "#1a1a2e",
+          "accentColor": "#ffd600",
+          "textColor": "#ffffff",
+          "sfx": "reveal"
+        }
+      ],
+      "audioFile": "voiceover/ANALYSIS_2.mp3"
+    },
+    {
+      "id": "ANALYSIS_3",
+      "label": "📊 분석 3: 투자 심리 및 수급 분석",
+      "narrationText": "투자 심리는 여전히 불안정한 모습입니다. 개인 투자자들은 하락장에 지쳐 매도에 나서는 반면, 외국인 투자자들은 저가 매수에 나서는 경향을 보이고 있습니다. 하지만, 외국인 투자자들의 매수세가 지속될지는 미지수입니다. 기관 투자자들은 관망세를 유지하며 시장 상황을 지켜보고 있습니다. 투자 심리가 회복되지 않으면 주가 상승을 기대하기 어려울 수 있습니다.",
+      "subScenes": [
+        {
+          "id": "ANALYSIS_3-1",
+          "type": "keyword-explosion",
+          "durationFrames": 600,
+          "headline": "투자 심리 분석",
+          "keywords": [
+            "불안감",
+            "매도세",
+            "저가매수",
+            "관망세",
+            "변동성"
+          ],
+          "caption": "갈팡질팡하는 투자 심리!",
+          "bgColor": "#16213e",
+          "accentColor": "#E74C3C",
+          "textColor": "#ffffff",
+          "sfx": "pop",
+          "body": "갈팡질팡하는 투자 심리!"
+        },
+        {
+          "id": "ANALYSIS_3-2",
+          "type": "chart-pie",
+          "durationFrames": 700,
+          "headline": "투자 주체별 매매 동향",
+          "chartData": {
+            "type": "pie",
+            "title": "최근 1개월 투자 주체별 순매수/순매도",
+            "data": [
+              {
+                "label": "개인",
+                "value": -2000,
+                "color": "#E74C3C"
+              },
+              {
+                "label": "외국인",
+                "value": 1500,
+                "color": "#00e676"
+              },
+              {
+                "label": "기관",
+                "value": 500,
+                "color": "#ffd600"
+              }
+            ],
+            "unit": "억원"
+          },
+          "caption": "엇갈리는 투자 주체들의 선택!",
+          "bgColor": "#0f3460",
+          "accentColor": "#4ECDC4",
+          "textColor": "#ffffff",
+          "sfx": "typing",
+          "body": "엇갈리는 투자 주체들의 선택!"
+        },
+        {
+          "id": "ANALYSIS_3-3",
+          "type": "fullscreen-text",
+          "durationFrames": 700,
+          "headline": "투자 심리 회복이 중요",
+          "body": "심리 회복 없이는 상승 어렵다",
+          "caption": "투자 심리가 주가에 미치는 영향!",
+          "bgColor": "#533483",
+          "accentColor": "#E74C3C",
+          "textColor": "#ffffff",
+          "sfx": "reveal"
+        }
+      ],
+      "audioFile": "voiceover/ANALYSIS_3.mp3"
+    },
+    {
+      "id": "TWIST",
+      "label": "😲 반전",
+      "narrationText": "하지만, 간과해서는 안 될 중요한 변수가 있습니다. 바로 정부의 정책 변화 가능성입니다. 정부가 주식 시장 활성화를 위해 세제 혜택을 확대하거나, 기업들의 자사주 매입을 유도하는 정책을 발표할 경우, 투자 심리가 급격하게 개선될 수 있습니다. 또한, 예상치 못한 글로벌 경제 호재가 발생할 경우, 한국 주식 시장은 다시 한번 상승 랠리를 펼칠 가능성도 배제할 수 없습니다. 항상 열린 마음으로 시장 상황을 주시해야 합니다.",
+      "subScenes": [
+        {
+          "id": "TWIST-1",
+          "type": "fullscreen-text",
+          "durationFrames": 700,
+          "headline": "숨겨진 변수",
+          "body": "정부 정책 변화 가능성!",
+          "caption": "정부 정책에 주목해야!",
+          "bgColor": "#0a0a1a",
+          "accentColor": "#ffd600",
+          "textColor": "#ffffff",
+          "sfx": "reveal"
+        },
+        {
+          "id": "TWIST-2",
+          "type": "emoji-rain",
+          "durationFrames": 600,
+          "headline": "기대되는 정책 변화",
+          "keywords": [
+            "💰",
+            "📈",
+            "🚀",
+            "🎉",
+            "🍀"
+          ],
+          "caption": "주식 시장 활성화 기대!",
+          "bgColor": "#0d1117",
+          "accentColor": "#00e676",
+          "textColor": "#ffffff",
+          "sfx": "swoosh",
+          "body": "주식 시장 활성화 기대!"
+        },
+        {
+          "id": "TWIST-3",
+          "type": "fullscreen-text",
+          "durationFrames": 700,
+          "headline": "예상치 못한 호재 발생 가능성",
+          "body": "글로벌 경제 깜짝 반등?!",
+          "caption": "항상 열린 마음으로!",
+          "bgColor": "#1a1a2e",
+          "accentColor": "#00e676",
+          "textColor": "#ffffff",
+          "sfx": "success"
+        }
+      ],
+      "audioFile": "voiceover/TWIST.mp3"
+    },
+    {
+      "id": "SUMMARY",
+      "label": "🎯 요약",
+      "narrationText": "결론적으로, 지금 한국 주식 시장에 들어가도 될지 여부는 개인의 투자 성향과 목표에 따라 달라질 수 있습니다. 공격적인 투자자라면 분할 매수를 통해 장기적인 관점에서 투자하는 것을 고려해 볼 수 있습니다. 반면, 안정적인 투자를 선호하는 투자자라면 당분간 관망세를 유지하며 시장 상황을 지켜보는 것이 현명할 수 있습니다. 중요한 것은 자신만의 투자 원칙을 세우고, 냉철하게 판단하는 것입니다.",
+      "subScenes": [
+        {
+          "id": "SUMMARY-1",
+          "type": "verdict-stamp",
+          "durationFrames": 800,
+          "headline": "최종 결론",
+          "body": "개인의 투자 성향에 따라 결정!",
+          "caption": "신중한 투자 결정이 중요!",
+          "bgColor": "#16213e",
+          "accentColor": "#00e676",
+          "textColor": "#ffffff",
+          "sfx": "success"
+        },
+        {
+          "id": "SUMMARY-2",
+          "type": "list-reveal",
+          "durationFrames": 600,
+          "headline": "투자 전략 요약",
+          "listItems": [
+            "분할 매수",
+            "장기 투자",
+            "관망세 유지"
+          ],
+          "caption": "자신에게 맞는 투자 전략 선택!",
+          "bgColor": "#0f3460",
+          "accentColor": "#ffd600",
+          "textColor": "#ffffff",
+          "sfx": "pop",
+          "body": "자신에게 맞는 투자 전략 선택!"
+        },
+        {
+          "id": "SUMMARY-3",
+          "type": "fullscreen-text",
+          "durationFrames": 600,
+          "headline": "가장 중요한 것",
+          "body": "자신만의 투자 원칙!",
+          "caption": "원칙을 지키는 투자가 성공의 지름길!",
+          "bgColor": "#533483",
+          "accentColor": "#00e676",
+          "textColor": "#ffffff",
+          "sfx": "reveal"
+        }
+      ],
+      "audioFile": "voiceover/SUMMARY.mp3"
+    },
+    {
+      "id": "OUTRO",
+      "label": "👋 마무리",
+      "narrationText": "오늘 영상이 여러분의 투자 결정에 조금이나마 도움이 되었기를 바랍니다. 투자에는 항상 위험이 따르므로, 신중하게 고려하시고, 전문가의 조언을 참고하시는 것도 좋은 방법입니다. 앞으로도 유익한 정보로 여러분을 찾아뵙겠습니다. 구독과 좋아요, 알림 설정 잊지 마시고요! 다음 영상에서 만나요! 안녕!",
+      "subScenes": [
+        {
+          "id": "OUTRO-1",
+          "type": "cta-subscribe",
+          "durationFrames": 800,
+          "headline": "구독 & 좋아요",
+          "body": "유익한 정보 계속 받아보세요!",
+          "caption": "알림 설정도 잊지 마세요!",
+          "bgColor": "#0a0a1a",
+          "accentColor": "#ff0033",
+          "textColor": "#ffffff",
+          "sfx": "ding"
+        },
+        {
+          "id": "OUTRO-2",
+          "type": "fullscreen-text",
+          "durationFrames": 600,
+          "headline": "투자 주의 사항",
+          "body": "투자는 신중하게!",
+          "caption": "전문가와 상담하세요!",
+          "bgColor": "#0d1117",
+          "accentColor": "#ffd600",
+          "textColor": "#ffffff",
+          "sfx": "whoosh"
+        },
+        {
+          "id": "OUTRO-3",
+          "type": "fullscreen-text",
+          "durationFrames": 600,
+          "headline": "다음에 또 만나요!",
+          "body": "시청해 주셔서 감사합니다!",
+          "caption": "더 유익한 정보로 찾아뵙겠습니다!",
+          "bgColor": "#1a1a2e",
+          "accentColor": "#00e676",
+          "textColor": "#ffffff",
+          "sfx": "swoosh"
+        }
+      ],
+      "audioFile": "voiceover/OUTRO.mp3"
+    }
+  ],
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "bgmFile": "bgm/news-ambient.mp3",
+  "bgmVolume": 0.12,
+  "thumbnailFile": "thumbnails/thumb.jpg",
+  "selectedVoiceId": "GBv7mTt0atIp3Br8iCZE"
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>관리자 대시보드 — YouTube LongForm Studio</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family:-apple-system,sans-serif; background:#0a0a0f; color:#e5e7eb; }
+    .container { max-width:1200px; margin:0 auto; padding:20px; }
+    h1 { font-size:24px; margin-bottom:24px; display:flex; align-items:center; gap:12px; }
+    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-bottom:24px; }
+    .stat-card { background:#111827; border:1px solid #1f2937; border-radius:12px; padding:20px; }
+    .stat-card .label { font-size:13px; color:#6b7280; margin-bottom:8px; }
+    .stat-card .value { font-size:32px; font-weight:900; }
+    .stat-card .value.blue { color:#3b82f6; }
+    .stat-card .value.green { color:#10b981; }
+    .stat-card .value.yellow { color:#f59e0b; }
+    .stat-card .value.purple { color:#8b5cf6; }
+    table { width:100%; border-collapse:collapse; background:#111827; border-radius:12px; overflow:hidden; }
+    th { background:#1f2937; padding:12px 16px; text-align:left; font-size:13px; color:#9ca3af; }
+    td { padding:12px 16px; border-top:1px solid #1f2937; font-size:14px; }
+    .badge { padding:3px 10px; border-radius:20px; font-size:11px; font-weight:700; }
+    .badge-free { background:#374151; color:#9ca3af; }
+    .badge-pro { background:#1e3a5f; color:#60a5fa; }
+    .badge-enterprise { background:#4c1d95; color:#a78bfa; }
+    .btn { padding:6px 12px; border:none; border-radius:6px; font-size:12px; cursor:pointer; font-family:inherit; }
+    .btn-blue { background:#3b82f6; color:#fff; }
+    .btn-green { background:#10b981; color:#fff; }
+    select { padding:4px 8px; background:#0d1117; color:#e5e7eb; border:1px solid #374151; border-radius:6px; font-size:12px; }
+    .section { margin-bottom:24px; }
+    .section h2 { font-size:18px; margin-bottom:12px; }
+    .refresh { float:right; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>
+    🛠️ 관리자 대시보드
+    <button class="btn btn-blue refresh" onclick="loadAll()">🔄 새로고침</button>
+  </h1>
+
+  <div class="grid" id="statsGrid">
+    <div class="stat-card"><div class="label">전체 사용자</div><div class="value blue" id="totalUsers">-</div></div>
+    <div class="stat-card"><div class="label">오늘 생성 영상</div><div class="value green" id="videosToday">-</div></div>
+    <div class="stat-card"><div class="label">이달 생성 영상</div><div class="value yellow" id="videosMonth">-</div></div>
+    <div class="stat-card"><div class="label">Pro 사용자</div><div class="value purple" id="proUsers">-</div></div>
+  </div>
+
+  <div class="section">
+    <h2>📊 요금제 분포</h2>
+    <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="stat-card">
+        <div class="label">무료</div>
+        <div class="value" id="freeCount" style="color:#9ca3af;">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">프로</div>
+        <div class="value" id="proCount" style="color:#60a5fa;">-</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">엔터프라이즈</div>
+        <div class="value" id="entCount" style="color:#a78bfa;">-</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>👥 사용자 목록</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>이메일</th>
+          <th>요금제</th>
+          <th>오늘</th>
+          <th>이달</th>
+          <th>TTS 사용</th>
+          <th>가입일</th>
+          <th>관리</th>
+        </tr>
+      </thead>
+      <tbody id="userTable"></tbody>
+    </table>
+  </div>
+
+  <div class="section">
+    <h2>💰 수익 시뮬레이터</h2>
+    <div class="grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="stat-card">
+        <div class="label">Pro × <span id="proSimCount">0</span>명</div>
+        <div class="value green" id="proRevenue">₩0</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">Enterprise × <span id="entSimCount">0</span>명</div>
+        <div class="value purple" id="entRevenue">₩0</div>
+      </div>
+      <div class="stat-card">
+        <div class="label">월 예상 수익</div>
+        <div class="value yellow" id="totalRevenue">₩0</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+async function loadAll() {
+  try {
+    const stats = await (await fetch('/api/admin/stats')).json();
+    document.getElementById('totalUsers').textContent = stats.totalUsers || 0;
+    document.getElementById('videosToday').textContent = stats.totalVideosToday || 0;
+    document.getElementById('videosMonth').textContent = stats.totalVideosMonth || 0;
+    document.getElementById('proUsers').textContent = (stats.proUsers || 0) + (stats.enterpriseUsers || 0);
+    document.getElementById('freeCount').textContent = stats.freeUsers || 0;
+    document.getElementById('proCount').textContent = stats.proUsers || 0;
+    document.getElementById('entCount').textContent = stats.enterpriseUsers || 0;
+
+    const proRev = (stats.proUsers || 0) * 29900;
+    const entRev = (stats.enterpriseUsers || 0) * 99900;
+    document.getElementById('proSimCount').textContent = stats.proUsers || 0;
+    document.getElementById('entSimCount').textContent = stats.enterpriseUsers || 0;
+    document.getElementById('proRevenue').textContent = '₩' + proRev.toLocaleString();
+    document.getElementById('entRevenue').textContent = '₩' + entRev.toLocaleString();
+    document.getElementById('totalRevenue').textContent = '₩' + (proRev + entRev).toLocaleString();
+
+    const users = await (await fetch('/api/admin/users')).json();
+    const tbody = document.getElementById('userTable');
+    tbody.innerHTML = users.map(function(u) {
+      return '<tr>' +
+        '<td style="font-size:12px;color:#6b7280;">' + u.id + '</td>' +
+        '<td>' + u.email + '</td>' +
+        '<td><span class="badge badge-' + u.tier + '">' + u.tier.toUpperCase() + '</span></td>' +
+        '<td>' + u.dailyCount + '</td>' +
+        '<td>' + u.monthlyCount + '</td>' +
+        '<td>' + (u.ttsCharsUsed || 0).toLocaleString() + '자</td>' +
+        '<td style="font-size:12px;color:#6b7280;">' + (u.createdAt ? u.createdAt.slice(0,10) : '-') + '</td>' +
+        '<td>' +
+        '<select onchange="changeTier(\'' + u.id + '\', this.value)">' +
+        '<option value="free"' + (u.tier==='free'?' selected':'') + '>무료</option>' +
+        '<option value="pro"' + (u.tier==='pro'?' selected':'') + '>프로</option>' +
+        '<option value="enterprise"' + (u.tier==='enterprise'?' selected':'') + '>엔터프라이즈</option>' +
+        '</select>' +
+        '</td>' +
+        '</tr>';
+    }).join('');
+
+  } catch(e) {
+    console.error('로드 실패:', e);
+  }
+}
+
+async function changeTier(userId, tier) {
+  await fetch('/api/admin/upgrade', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ userId: userId, tier: tier }),
+  });
+  loadAll();
+}
+
+loadAll();
+setInterval(loadAll, 10000);
+</script>
+</body>
+</html>
